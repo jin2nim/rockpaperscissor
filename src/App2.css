@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    background-color: #ff007a;   
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.contain {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh -5rem);
+    left: 50%;
+    padding: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    min-height: 650px;
+}
+
+.scoreBox {
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.main, .main>div {
+    display: flex;
+    flex: 1 1;
+}
+
+.main {
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.main>div:first-of-type {
+    border-right: 1px solid #ccc;
+}
+
+.main>div {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.main img {
+    height: 100px;
+    /* width: 100px; */
+}
+
+.win .winOrLose{
+    /* border: 10px solid green; */
+    color: green;
+    font-size: 2rem;
+    margin: 1rem;
+  }
+.lose .winOrLose {
+    /* border: 10px solid red; */
+    color: red;
+}
+
+.win {
+    /* border: 1px solid #333; */
+    box-shadow: 1px 1px 50px #ccc;
+    border-radius: 0.5rem;
+    border: none !important;
+}
+
+.lose {
+    border: none !important;
+}
+
+.win img {
+    width: 120px;
+    height: 120px;
+}
+
+.buttonList {
+    align-items: center;
+    border-top: 1px solid #ccc;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 1.5rem;
+    width: 100%;
+}
+
+.buttonList button {
+    height: 80px;
+    position: relative;
+    width: 80px;
+    /* background-color: initial; */
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.buttonList button img {
+    width: 100%;
+    transform: rotate(-90deg);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .contain {
+        width: 90%;
+        /* height: calc(100vh -10rem); */
+    }
+
+    .main img {
+        /* width: 70px; */
+        height: 70px;
+        /* border: none; */
+    }
+
+    .win img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .buttonList button {
+        width: 50px;
+        height: 50px;
+    }
+}
