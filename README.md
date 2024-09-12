@@ -4,4 +4,4 @@ Rock Scissor Paper with Computer
 
 ## Click Demo
 
-https://jin2nim/github.io/rockpaperscissor
+https://jin2nim.github.io/rockpaperscissor
